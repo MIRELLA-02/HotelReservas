@@ -164,7 +164,7 @@ web/index.html
 
 -----
 
-📅 Reservas Cadastradas
+## 📅 Reservas Cadastradas
 
 <img width="1892" height="867" alt="tela4" src="https://github.com/user-attachments/assets/2f8505bf-37e1-4898-80ef-5e1e507bec52" />
 
