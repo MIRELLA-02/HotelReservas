@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Soul</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <h2 class="logo">HOTEL SOUL</h2>
+            <button onclick="abrirCadastroQuarto()" class="menu-btn">🏡Quartos</button>
+            <button onclick="abrirCadastroReserva()" class="menu-btn">🗓️ Reservas</button>
+            <button onclick="abrirSobre()" class="menu-btn">📌 Sobre</button>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Gerenciamento de Quartos</h1>
+            </header>
+
+            <section id="cadastro-quarto" class="hidden">
+                <h2>Novo Quarto</h2>
+                <input type="text" id="numero" placeholder="Número do quarto">
+                <input type="text" id="tipo" placeholder="Tipo do quarto">
+                <button onclick="cadastrarQuarto()">Cadastrar</button>
+            </section>
+
+            <section id="lista-quartos">
+                <h2>Quartos Cadastrados</h2>
+                <div id="quartos-container" class="quartos-grid"></div>
+            </section>
+
+            <section id="reservas-section" class="hidden">
+                <div class="titulo-reserva">
+                    <h4 id="titulo-quarto">Todas as Reservas Cadastradas</h4>
+                </div>
+
+                <div class="cadastro-reserva">
+                    <h3>Cadastrar Reserva</h3>
+                    <input type="text" id="hospede" placeholder="Nome do hóspede">
+
+                <select id="select-quarto" style="width: 300px; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 8px; display: block; font-weight: bold; background: white; color: #0B1D3A;">
+                <option value="">Selecione o Quarto</option>
+                </select>
+
+                    <input type="date" id="entrada">
+                    <input type="date" id="saida">
+                    
+                    <button onclick="cadastrarReserva()">
+                        Cadastrar Reserva
+                    </button>
+                </div>
+
+                <div id="reservas-container" class="reservas-grid"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
